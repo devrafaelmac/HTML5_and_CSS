@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/favicon_io/favicon.ico" type="image/x-icon">
+    <title>My First Exercise</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            text-align: justify;
+        }
+        h1 {
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="div-header">
+            <h1>My Home Page</h1>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <h2>Understanding the Basics - Topic 1</h2>
+        <p>That's my first HTML document! I'm very excited!</p>
+        <p>If you need to break the text at some point, you have to use the br (break row) tag. Here is <br> an example!</p>
+        <img src="logo-html.png" alt="Logo HTML 5">
+        <h2>Understanding the Basics - Topic 2</h2>
+        <h3>Subtopic 2.1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus molestiae quam ut consequatur sequi atque perspiciatis eaque corporis quos iure facilis, id, labore totam, quod magni accusamus aperiam voluptates voluptatem.</p>
+        <h3><abbr title="We can use the Strong tag.">Bold</abbr></h3>
+        <p>Here, we are going to talk about <i>text format</i>, with and without meaning. <b>That's a bold text</b> without meaning because I'm using the tag b. <br>
+        <strong>Here we have a bold text with meaning using the tag strong.</strong></p>
+        <h3>Mark</h3>
+        <p>That's a <MARK style="background-color: lime;">mark</MARK> with the tag MARK.</p>
+        <h3>Typing Code</h3>
+        <p>Here an example of how to insert code into your content with code and pre tags.</p>
+        <pre>
+            <code>
+                test = int(input(Enter a integer number:))
+                if test % 2 == 0:
+                    print(f'The number {test} is even.')
+                else:
+                    print(f'The number {test} is odd.')
+            </code>
+        </pre>
+        <h3>Ordered Lists</h3>
+        <ol type="I"><!-- 1 A a I i -->
+            <li>Wake Up</li>
+            <li>Call John</li>
+            <li>Have Breakfast</li>
+            <li>Brush Teeth</li>
+            <li>Wash Clothes</li>
+        </ol>
+        <h3>Unordered Lists</h3>
+        <ul type="disc">
+            <li>Wake Up</li>
+            <li>Call John</li>
+            <li>Have Breakfast</li>
+            <li>Brush Teeth</li>
+            <li>Wash Clothes</li>
+        </ul>
+        <h3>Links</h3>
+        <p>We have now a <a href="https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/jeep/commander" target="_blank" rel="external">link</a> to a different page, outside our webpage. <br>With <code>target="_blank"</code> we make that a new page open and with <code>rel="external"</code> we make it clear that we are talking about an external reference.</p>
+        <p>Go to <a href="page_02.html" target="_self" rel="author">second page</a>.</p>
+    </main>
+    <footer>
+        <div id="div-footer">
+            <p>Copyright 2025. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
