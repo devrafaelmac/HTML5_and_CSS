@@ -57,6 +57,10 @@ header {
     border: 1px solid lightgray;
 }
 
+.no_border {
+    border: none;
+}
+
 .test_01 > iframe {
     width: 100%;
 }
@@ -64,6 +68,11 @@ header {
 div:hover{
     background-color: #00a19c3b;
     transition: 0.5s;
+}
+
+div.no_border:hover{
+    background-color: #00a19c00;
+    transition: 0;
 }
 
 nav {
@@ -118,4 +127,34 @@ div#div-footer > p {
     color: white;
     text-align: center;
     margin: 0px;
+}
+
+table {
+    width: 100%;
+    height: 300px;;
+    border-collapse: collapse;
+}
+
+table td {
+    border: 1px solid gray;
+    text-align: center;
+    /* vertical-align: top; */
+} 
+
+table td:hover {
+    background-color: #00a19c3b;
+    transition: 0.5s;
+}
+
+table td a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+a.a_div {
+    text-decoration: none;
+    color: black;
 }
