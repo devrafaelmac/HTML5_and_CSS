@@ -11,6 +11,7 @@ body, html {
     background-color: blueviolet;
     height: 100vh;
     width: 100vw;
+    min-height: 500px;
 }
 
 main {
@@ -56,8 +57,27 @@ div#form > p {
     font-family: 0.8em;
 }
 
+div#form > form {
+    padding-top: 15px;
+}
+
 label.label-form {
     display: none;
+}
+
+div.field-form > span {
+    font-size: 2em;
+    width: 40px;
+}
+
+
+div.field-form > input {
+    font-size: 1em;
+    transform: translatey(-10px); 
+}
+
+div.field-form > label {
+    transform: translatey(-10px);
 }
 
 form > input[type=submit] {
@@ -99,6 +119,7 @@ form > a.form-buttom > span {
 
     section#login {
         width: 80vw;
+        height: 300px;
     }
 
     section#login > div#image {
@@ -113,7 +134,8 @@ form > a.form-buttom > span {
     }
 
     label.label-form {
-        display: inline;
+        display: inline-block;
+        transform: translatey(-10px);
     }
 }
 
@@ -124,6 +146,7 @@ form > a.form-buttom > span {
 
     section#login {
         width: 900px;
+        height: 300px;
     }
     section#login > div#image {
         float: right;
@@ -137,6 +160,7 @@ form > a.form-buttom > span {
     }
 
     label.label-form {
-        display: inline;
+        display: inline-block;
+        transform: translatey(-10px);
     }
 }
