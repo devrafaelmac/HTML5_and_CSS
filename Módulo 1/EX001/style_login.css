@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    min-height: 500px;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    background-color: lightgray;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width .25s, height .25s;
+    transition-timing-function: ease;
+}
+
+section#login > div#image {
+    display: block;
+    background: blueviolet url(Images/back_phone.png) no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+section#login > div#form {
+    display: block;
+    padding: 10px;
+}
+
+div#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#form > p {
+    font-family: 0.8em;
+}
+
+label.label-form {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #2d6462;
+}
+
+form > a.form-buttom {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    color: black;
+    padding-top: 7px;
+    margin-top: 5px;
+}
+
+form > a.form-buttom > span {
+    font-size: 0.8em;
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 80vw;
+    }
+
+    section#login > div#image {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#form {
+        float: right;
+        width: 70%;
+    }
+
+    label.label-form {
+        display: inline;
+    }
+}
+
+@media screen and (min-width:993px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 900px;
+    }
+    section#login > div#image {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#form {
+        float: left;
+        width: 50%;
+    }
+
+    label.label-form {
+        display: inline;
+    }
+}

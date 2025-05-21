@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style_login.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="image">
+
+            </div>
+            <div id="form">
+                <h1>Login</h1>
+                <p>
+                    Welcome back! Log in with your credentials to access our platform.
+                </p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="field-form">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="E-mail" autocomplete="email" required maxlength="30">
+                        <label for="ilogin" class="label-form">Login</label>
+                    </div>
+                    <div class="field-form">
+                        <span class="material-symbols-outlined" >key</span>
+                        <input type="password" name="pass" id="ipassword" placeholder="Password" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="ipassword"  class="label-form">Password</label>
+                    </div>
+                    <input type="submit" value="Enter">
+                    <a href="#" class="form-buttom">forgot my password <span class="material-symbols-outlined">mail</span></a>
+                </form>
+            </div>   
+        </section>
+    </main>
+</body>
+</html>
